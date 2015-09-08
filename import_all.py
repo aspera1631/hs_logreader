@@ -32,7 +32,12 @@ def get_ids(filename):
     df["CardId"] = np.nan
     df["Player"] = np.nan
 
-    #print d
+    df.ix[1, "Name"] = "GameEntity"
+    df.ix[2, "Name"] = "Player 1"
+    df.ix[2, "Player"] = 1
+    df.ix[3, "Name"] = "Player 2"
+    df.ix[3, "Player"] = 2
+
     return df
 
 
